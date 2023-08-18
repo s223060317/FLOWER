@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My HTML Page</title>
+  <style>
+    /* Global styles */
+    body {
+      background-color: #f0f0f0; /* Light gray background */
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Image styles */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Remove float and add block display */
+      margin: 20px auto; /* Center the image */
+    }
+
+    /* Paragraph styles */
+    p {
+      font-weight: bold;
+      text-align: center; /* Center align the paragraph */
+    }
+
+    /* Table styles */
+    table {
+      width: 80%; /* Set table width to 80% of the container */
+      margin: 20px auto; /* Center the table */
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* Form styles */
+    form {
+      width: 80%; /* Set form width to 80% of the container */
+      margin: 20px auto; /* Center the form */
+      text-align: left; /* Align form content to the left */
+    }
+    label, input, textarea {
+      display: block; /* Place each element on a new line */
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 8px;
+    }
+    input[type="submit"] {
+      width: auto;
+      background-color: #007bff; /* Blue color for the submit button */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3; /* Darker blue color on hover */
+    }
+  </style>
+</head>
+<body>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzrmLaNu-mVFeT8SDqBBTuHryOwhSQHSbFhu4-Vd6EuDVfsjWSHdsV8A9v2FnZXWWgQnE&usqp=CAU" alt="Flower">
+  
+  <p>Flowers, with their vibrant colors and delicate petals, enchant the senses and evoke a sense of natural beauty that brings joy to the heart.</p>
+
+  <table>
+    <tr>
+      <th>Flower Type</th>
+      <th>Color</th>
+    </tr>
+    <tr>
+      <td>Rose</td>
+      <td>Red</td>
+    </tr>
+    <tr>
+      <td>Tulip</td>
+      <td>Yellow</td>
+    </tr>
+    <tr>
+      <td>Lily</td>
+      <td>White</td>
+    </tr>
+  </table>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
