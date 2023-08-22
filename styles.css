@@ -1,9 +1,25 @@
 /* styles.css */
-a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  
+
+/* Table styles */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Table header styles */
+th {
+  background-color: #007bff; /* Blue background for table headers */
+  color: white;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray background for even rows */
+}

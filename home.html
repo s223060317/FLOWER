@@ -3,26 +3,15 @@
 <head>
   <title>My HTML Page</title>
   <style>
-    /* Global styles */
+    /* Internal CSS */
     body {
-      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
     }
 
-    /* Image styles */
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 20px auto;
-    }
-
-    /* Paragraph styles */
-    p {
-      font-weight: bold;
-      text-align: center;
+    .highlight {
+      color: red;
     }
 
     /* Table styles */
@@ -64,15 +53,33 @@
       background-color: #0056b3;
     }
   </style>
-  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to external CSS file -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1 style="color: blue; text-align: center;">Beautiful Flowers</h1> <!-- Inline Style -->
+  <h1 class="highlight">Welcome to My Flower Garden</h1>
 
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzrmLaNu-mVFeT8SDqBBTuHryOwhSQHSbFhu4-Vd6EuDVfsjWSHdsV8A9v2FnZXWWgQnE&usqp=CAU" alt="Flower">
-  
-  <p>Flowers, with their vibrant colors and delicate petals, enchant the senses and evoke a sense of natural beauty that brings joy to the heart.</p>
 
+  <p style="color: green;">Flowers, with their vibrant colors and delicate petals, enchant the senses and evoke a sense of natural beauty that brings joy to the heart.</p>
+ 
+  <h2>Types of Flowers:</h2>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Rose" target="_blank">Rose</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Tulip" target="_blank">Tulip</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Lily" target="_blank">Lily</a></li>
+  </ul>
+
+  <h2>Flower Colors:</h2>
+  <dl>
+    <dt>Rose</dt>
+    <dd>Red</dd>
+    <dt>Tulip</dt>
+    <dd>Yellow</dd>
+    <dt>Lily</dt>
+    <dd>White</dd>
+  </dl>
+
+  <h2>Flower Data:</h2>
   <table>
     <tr>
       <th>Flower Type</th>
@@ -89,6 +96,10 @@
     <tr>
       <td>Lily</td>
       <td>White</td>
+    </tr>
+    <tr>
+      <td>Daisy</td>
+      <td>Various</td>
     </tr>
   </table>
 
